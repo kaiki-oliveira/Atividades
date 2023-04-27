@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'cubic';
+    src: url('fonts/cubic.ttf') format('truetype');
+    font-weight: normal;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+h1{
+    font-family: 'cubic', Times, serif;
+    font-size: 3em;
+   
+}
