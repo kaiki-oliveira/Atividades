@@ -3,17 +3,18 @@ function contar(){
     var fim = window.document.getElementById('fim')
     var pas = window.document.getElementById('pas')
     var res = window.document.getElementById('res')
-    var n1 = Number(ini.value)
-    var n2 = Number(fim.value)
-    var n3 = Number(pas.value)
-    var c = n1
-
-    while (c <= n2){
-        res.innerHTML = `${c} >`
-        c++
+    
+    if(ini.value.length == 0 || fim.value.length == 0 || pas.value.length == 0){
+        window.alert('Faltam dados')
     }
-   /* for (var c = n1; c <=  n2; c++) {
-        res.innerText = c
-        
-    }*/
+    else{
+        res.innerHTML = 'Contando'
+        var i = Number(ini.value)
+        var f = Number(fim.value)
+        var p = Number(pas.value)
+        for (var c = i; c <= f; c += p ){
+            res.innerHTML += `${c}`
+        }
+    }
+
 }
