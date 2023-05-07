@@ -1,4 +1,4 @@
-function calcular(){
+function adicionar(){
     var n1 = window.document.getElementById('n1')
     var tab = window.document.getElementById('tab')
     if(n1.value.length == 0){
