@@ -1,8 +1,7 @@
 function adicionar(){
-    var n1 = window.document.getElementById('n1')
-    var tab = window.document.getElementById('tab')
-    if(n1.value.length == 0){
-        window.alert('por favor digite um dunero')
+    var num = window.document.getElementById('txtnum')
+    if(num.value.length == 0){
+        window.alert('por favor digite um dunero para continuar')
     }
     else{
         var n = Number(n1.value)
