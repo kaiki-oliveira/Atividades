@@ -1,37 +1,46 @@
+@charset "UTF-8";
 *{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 
 }
+html, body{
+    min-height: 100vh;
+}
 header{
     background-color: black;
     color: white;
     text-align: center;
-    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
 header h1{
+    padding-top: 50px;
     font-size: 50pt;
+    font-variant: small-caps;
 }
-header a{
-    text-decoration: none;
-    color: white;
 
-}
 header p{
     font-size:15pt;
+    padding-bottom: 50px;
 }
-section p{
-    font-size: 30pt;
-    width: 500px;
-    margin: 40px;
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+a :hover{
+    text-decoration: underline;
 }
 section{
-    padding: 20px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
 }
 .main{
     background-color: rgb(230, 230, 230);
@@ -42,13 +51,12 @@ section{
 #folhas{
     background: cornflowerblue url('../imagens/background002.jpg') center center no-repeat fixed;
 }
-.bgi{
-    box-shadow:  10px black;
-}
+
 .bgi p{
+    width: 400px;
     background-color: rgba(0, 0, 0, 0.445);
     color: white;
-    padding: 10px;
+   
     
 }
 footer{
