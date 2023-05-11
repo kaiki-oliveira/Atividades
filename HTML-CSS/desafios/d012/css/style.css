@@ -5,7 +5,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 
 }
 :root{
@@ -15,7 +14,7 @@
 }
 html, body{
     min-height: 100vh;
-    
+    font-family: var(--fonte1);
 }
 header{
     background-color: black;
@@ -29,8 +28,9 @@ header{
 }
 header h1{
     padding-top: 50px;
-    font-size: 50pt;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
 header p{
@@ -50,6 +50,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3vw;
 }
 .main{
     background-color: rgb(230, 230, 230);
@@ -62,7 +64,8 @@ section{
 }
 
 .bgi p{
-    width: 400px;
+    display: inline-block;
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.445);
     color: white;
    
