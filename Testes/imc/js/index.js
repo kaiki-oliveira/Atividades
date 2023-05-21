@@ -18,5 +18,7 @@ function calculoImc(){
     let imc = peso.value/(altura.value ** 2);
      imcFinal.value = imc.toFixed(2);
 
-   
+    if(imc <= 18){
+        resultado.innerHTML =`sr`+ nome `Você esta muido magro`
+    }
 }
