@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quer namorar comigo?</title>
+    <style>
+        body {
+            background-color: rgb(255, 132, 153);
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .center {
+            display: flex;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            margin: 0 20px;
+            color: black;
+            background-color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        .img {
+            display: block;
+            background-image: url(pedido-de-namoro_front.png);
+            background-size: cover;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 300px;
+            width: 300px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>Quer namorar comigo?</h1>
+    </div>
+    <div class="img"></div>
+    <div class="btn">
+        <button id="sim"><a href="https://www.youtube.com/watch?v=1f_XhgajmNE" target="_blank">Sim</a></button>
+        <button id="nao">Não</button>
+    </div>
+
+    <script>
+        const naoBtn = document.getElementById('nao');
+        const simBtn = document.getElementById('sim');
+        const img = document.querySelector('.img');
+
+        simBtn.addEventListener('mouseover', () => {
+            img.style.backgroundImage = "url('pedido-de-namoro_right.png')";
+        });
+
+        simBtn.addEventListener('mouseout', () => {
+            img.style.backgroundImage = "url('pedido-de-namoro_front.png')";
+        });
+
+        naoBtn.addEventListener('mouseover', () => {
+            naoBtn.style.position = 'absolute';
+            naoBtn.style.left = Math.floor(Math.random() * window.innerWidth) + 'px';
+            naoBtn.style.top = Math.floor(Math.random() * window.innerHeight) + 'px';
+        });
+    </script>
+</body>
+</html>
