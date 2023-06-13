@@ -34,3 +34,25 @@ function mostra(){
     window.document.body.style.background = '#000'
 }
 addEventListener('click', mostra)
+
+function imc2(peso, altura){
+    const imc2 = peso / (altura ** 2)
+    console.log(imc2)
+}
+
+imc2(80, 1.80)
+console.log(imc2(80, 1.80))
+
+function terceiraIdade(idade){
+    if(typeof idade !== 'number'){
+        return 'Por favor, preencha um numero'
+    }
+    else if ( idade>=60){
+        return true }
+    else{
+        return false
+    }
+    console.log(idade)
+
+}
+console.log(terceiraIdade(60))
