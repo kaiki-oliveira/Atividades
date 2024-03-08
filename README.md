@@ -25,8 +25,8 @@
 <h1> Pastas </h1>
 <ul>
   <li> <a url="https://kaiki-oliveira.github.io/Atividades/HTML-CSS.html">HTML-CSS </a> </li>
-  <li> <a url=""> </a> </li>
-  <li> <a url=""> </a> </li>
+  <li> <a url="">JavaScript </a> </li>
+  <li> <a url="">(Origamid)Javascript </a> </li>
   <li> <a url=""> </a> </li>
   <li> <a url=""> </a> </li>
 </ul>
