@@ -1,1 +1,1 @@
-window.alert('corno');
+document.querySelector('h1')
