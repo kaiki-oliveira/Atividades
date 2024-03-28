@@ -13,5 +13,4 @@ console.log(carro)
 
 console.log(mes)
 
-//EXERCICIO
 
